@@ -1,0 +1,57 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+<style>
+div {
+    width: 300px;
+    height: 300px;
+    background: #584fdf;
+    margin: 50px;
+    background-image: url("bunnies.gif")
+}
+#static {
+    background:#9390c2;
+    position: static;/*default */
+    background-image: url("bunnies.gif")
+}
+#sticky {
+    background: pink;
+    position: sticky; 
+}
+#relative {
+    background: rgb(174, 119, 119);
+    position: relative; 
+    left: 100px; 
+    top: -100px; 
+    z-index: -5;
+    background-image: url("homelander.gif")
+}
+#fixed {
+    background: rgb(104, 56, 64);
+    position: fixed;
+    left: 200px;
+    top: 0;
+}
+#absolute {
+    background: rgb(64, 52, 149);
+    position: absolute;
+    left: 300px;
+    bottom: -300px
+}
+</style>
+<meta charset="utf-8">
+<title>my index page</title>
+</head>
+            
+<body>
+<div id="static"></div>
+<div id="sticky"></div>
+<div id="relative"></div>
+<div id="fixed"></div>
+<div id="absolute"></div>
+<p>hello world.</p>
+</body>
+
+</html>
